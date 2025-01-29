@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     padding: 4rem 1rem;
@@ -39,24 +39,17 @@ header p {
     text-align: center;
 }
 
-main {
-    padding: 3rem 1rem;
-}
-
-.intro p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-}
-
-.features h2, .more-info h2 {
+.section-title {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #2980b9;
 }
 
 .cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -66,54 +59,67 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
-    max-width: 350px;
     padding: 1.5rem;
     text-align: left;
+    flex: 1;
 }
 
 .card h3 {
+    font-family: 'Quicksand', sans-serif;
     font-size: 1.8rem;
-    margin-bottom: 1rem;
     color: #3498db;
 }
 
-.card p {
+.card-text {
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 1.5rem;
 }
 
-.card ul {
-    font-size: 1rem;
-    color: #666;
+ul {
     padding-left: 1.5rem;
 }
 
-.card a {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #3498db;
-    color: white;
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.card a:hover {
-    background-color: #2980b9;
-}
-
-.more-info p {
-    font-size: 1.2rem;
+ul li {
+    font-size: 1rem;
     color: #333;
 }
 
-.contact {
-    background: #ecf0f1;
-    padding: 2rem 1rem;
+ul li a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #2980b9;
+}
+
+.extra-info {
+    background-color: #ecf0f1;
+    padding: 3rem 1rem;
     text-align: center;
     border-radius: 10px;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.column {
+    width: 45%;
+}
+
+.column h3 {
+    font-size: 2rem;
+    color: #2980b9;
+}
+
+.column p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
 form {
@@ -122,20 +128,12 @@ form {
     align-items: center;
 }
 
-form label {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
-    width: 80%;
-}
-
 form input {
     width: 80%;
     padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1rem;
 }
 
 form button {
